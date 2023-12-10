@@ -1,73 +1,98 @@
-<h1> tu będzię formularz</h1>
+<font size=15<h1> <center>Nik-Dzienik </center></h1></font>
 <button class="button" type="button"><a href="index.html">powrót</a></button>
 <!DOCTYPE html>
 <html lang="pl-PL">
 <html>
 <head>
+  <style>
+  body {
+    color: 6220B4;
+  }
+  </style>
 <meta charset="utf-8">
 <title> ZADANIE FORMULARZ </title>
 </head>
 <body bgcolor="#090828">
-  <div style="width: 100%; height: 100%; background: #130239; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)"></div>
-<center><h1> Nik-Dzienik</h1></center>
+<center>
+  <div class="open_qstn">
+    <div class="head_question"></div>
+    <div class="oq_raiting_block">
+      <input type="text" name="temat" class="oq_input_name" placeholder="wyszukiwanie na stronie... " maxlength="900" style="background-color: #130239;">
+    </div>
+    <button style="background-color: #1B0648; color: Grey; width: 180px; height: 30px; border: none;">
+      Kto wygrał turniej szachowy?
+    </button>
 
-<TABLE>
-<TR height="100">
-<TD width="500">
-<b>Imię</b> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<input name="imie" size="22">
-<br><br>
-<b>Drugie imię</b>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-&nbsp &nbsp &nbsp &nbsp <input name="drugie" size="22">
-<br><br>
-<b>Nazwisko </b> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input name="nazwisko" size="22">
-<br><br>
-<b>Pseudonim artystyczny</b>&nbsp &nbsp<input name="login" size="22"><nobr> <br>
-</TD>
-<TD width="300" >
-<center><font size="5" color="red"><b>Podaj środek lokomacji dojazdu do pracy</b></font></center><br>
- <select>
-<option value="autobus">Autobus</option>
-<option value="motocykl">Motocykl</option>
-Opracowanie mgr inż. Marek Kryniewski ZSE
-44
-<option value="prom">Prom</option>
-<option value="samolot">Samolot</option>
-<option value="lodz">Łódź podwodna</option>
-<option value="kajak">Kajak</option>
-</select>
-</TD>
-<TD width="500">Jaka jest Twoja ulubione ciastko?
-<br><br>
-<input type="checkbox" name="ciastko" value="k"> BEZA
-<br><br>
-<input type="checkbox" name="ciastko" value="m"> SERNIK
-<br><br>
-<input type="checkbox" name="ciastko" value="inna"> INNE
-<br><br><br>
-<nobr>Jeśli zaznaczyłeś INNE to podaj swoje ciastko<br>wpisz ciastko poniżej. Maks: 100<br>znaków</nobr>
-<br><br>
-<input name="inna" size="25" maxlength="100">
-</TD>
-</TR>
-<TR height="200">
-<TD><nobr>Czy umiesz programować?</nobr>
-<br><br>
-<input type="radio" name="pyt3" value="tak"> Tak
-<br><br>
-<input type="radio" name="pyt3" value="nie"> Nie
-<br><br>
-<input type="radio" name="pyt3" value="tak"> Nie wiem <br> <br> <b> W polu poniżej <br>Wpisz opinię na temat pogody</b> <textarea cols="50" rows="4"></textarea> </TD>
-<TD>podaj czas &nbsp &nbsp &nbsp &nbsp<input type="time"><br>
-podaj datę &nbsp &nbsp &nbsp&nbsp &nbsp<input type="date"> <br>
-wybierz kolor &nbsp &nbsp<input type="color"> <br> </TD>
-<TD> jaka jest wilgotność <input type="range"> <br>
-Proszę czekać...&nbsp &nbsp &nbsp &nbsp <progress>Proszę czekać...</progress> </TD>
-</TR>
-<TR height="100">
-<TD><button onclick="alert('A kuku')" style="height:80px;width:300px">Przycisk niespodzianka</button></TD>
-<TD><nobr><input type="reset" value="Reset" style="height:80px; width:150px"> </TD>
-<TD> <input type="submit" value"=Wyślij formularz" style="height:80px; width:150px"> </TD>
+    <style>
+      button:hover {
+        background-color: red;
+        color: red;
+        border: 1px solid red;
+      }
+    </style>
+    </center>
+  
+
+  <div style="float: right;">
+
+
+    <table>
+      <tr>
+        <th style="position:absolute; top: 120px; left: 895px;">  Nazwa użytkownika</th>
+        
+      </tr>
+      <tr style="border: 2px solid #000000;">
+        <td style="position:absolute; top: 140px; left: 895px;"> <input name="nazwisko" size="22"></td>
+      </tr>
+    </table>
+
+    <table>
+      <tr>
+        
+        <th style="position:absolute; top: 170px; left: 895px;"> Hasło</th>
+      </tr>
+      <tr>
+        <td style="background-color: #1B0648;position:absolute; top: 190px; left: 895px;"background-color: #130239;"> <input name="login" size="22";></td>
+      </tr>
+    </table>
+   
+  <button style="background-color: #1B0648; color: white; width: 100px; height: 45px; border: none; transition: transform 0.5s;position: absolute; top: 220px; left: 940px;">
+    <a href="index.html"></a>
+    <span onmouseover="this.parentElement.style.transform='scale(1.1)';" onmouseout="this.parentElement.style.transform='scale(1)';">zaloguj się</span>
+  </button>
+  
+  
+
+
+    <button style="background-color: #090828; color: grey; width: 190px; height: 25px; border: none; position: absolute; top: 600px; left: 1px;">sekretariat@zse.edu.gdansk.pl</button>
+    
+    <button style="background-color: #090828; color: grey; width: 190px; height: 25px; border: none; position: absolute; top: 620px; left: 1px;">www.nik_dziennik.edu.gdansk.pl</button>
+  </button>
+    
+    <button style="background-color: #090828; color: grey; width: 184px; height: 25px; border: none; position: absolute; top: 270px; left: 903px;">
+      <span onmouseover="this.style.color='6220B4'" onmouseout="this.style.color='grey'">pierwsze logowanie/zmień hasło</span>
+    </button>
+
+    <button style="background-color: #1B0648; color: #6220B4; width: 200px; height: 33px;border: none; transition: transform 0.5s;position: absolute; top: 150px; left: 40px;">
+      <a href="index.html"></a>
+      <span style="font-size: 30px;"onmouseover="this.parentElement.style.transform='scale(1.1)';" onmouseout="this.parentElement.style.transform='scale(1)';">uczeń </span>
+
+<button style="background-color: #1B0648; color: #6220B4; width: 200px; height: 33px;border: none; transition: transform 0.5s;position: absolute; top: 220px; left: 40px;">
+      <a href="index.html"></a>
+      <span style="font-size: 30px;"onmouseover="this.parentElement.style.transform='scale(1.1)';" onmouseout="this.parentElement.style.transform='scale(1)';">uczeń </span>
+
+    </button>
+
+      <div style="position: relative;">
+        <select style="position: absolute; top: 140; left: -1435;background-color:#1B0648;font-size:25px;color:#6220B4;">
+          <option style=color:#6220B4; value="autobus">Kontakty</option>
+          <option style=color:#6220B4;value="motocykl">Nikita(dyrektor)</option>
+          <option style=color:#6220B4;value="prom">Magda</option>
+          <option style=color:#6220B4 value="samolot">даун</option>
+          <option style=color:#6220B4 value="lodz">Łódź podwodna</option>
+          <option style=color:#6220B4 value="kajak">Kajak</option>
+        </select>
+      </div>
 </TR>
 </TABLE>
 </form>
