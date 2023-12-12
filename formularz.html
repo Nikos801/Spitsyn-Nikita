@@ -21,20 +21,7 @@
     </div>
 </div>
 
-<script>
-    function checkEnter(event) {
-        if (event.key === "Enter") {
-            // Получите значение, введенное пользователем
-            var inputValue = document.getElementById("searchInput").value;
 
-            // Проверьте, что введенное значение не пусто
-            if (inputValue.trim() !== "") {
-                // Выполните переход на страницу "błąd.html" с учетом введенных данных
-                window.location.href = "błąd.html?q=" + encodeURIComponent(inputValue);
-            }
-        }
-    }
-</script>
      <a href="błąd.html">  <button style="background-color: #1B0648; color: Grey; width: 180px; height: 30px; border: none;">
       Kto wygrał turniej szachowy?
     </button>
@@ -68,9 +55,9 @@
 <div style="position: relative;">
         <select style="position: absolute; top: 140; width: 200px; height: 33px; left: 190; ;background-color:#1B0648;font-size:21px;color:#6220B4;">
             <option style=color:#6220B4; value="Kontakt">Kontakty</option>
-         <a href="błąd.html">  <option style=color:#6220B4;value="dyrektor">Nikita(dyrektor)</option>
-          <a href="błąd.html">  <option style=color:#6220B4;value="prom">Magda(Psycholog)</option>
-          <a href="błąd.html">  <option style=color:#6220B4 value="da">Maks(wicedyrektor)</option>
+          <option style=color:#6220B4;value="dyrektor">Nikita(dyrektor)</option>
+          <option style=color:#6220B4;value="prom">Magda(Psycholog)</option>
+            <option style=color:#6220B4 value="da">Maks(wicedyrektor)</option>
         </left>
         </select>
       </div>
@@ -81,8 +68,7 @@
 
     <table>
       <tr>
-        <th style="position:absolute; top: 120px; left: 1100px;color:white">  Nazwa użytkownika</th>
-        
+        <th style="position:absolute; top: 120px; left: 1100px;color:white">  Nazwa użytkownika</th> 
       </tr>
       <tr style="border: 2px solid #000000;">
         <td style="position:absolute; top: 140px; left: 1100px;"> <input name="nazwisko" size="22"></td>
