@@ -17,7 +17,7 @@
   <div class="open_qstn">
     <div class="head_question"></div>
     <div class="oq_raiting_block">
-     <a href="błąd.html"> <input type="text" name="temat" class="oq_input_name" placeholder="wyszukiwanie na stronie... " maxlength="900" style="background-color: #130239;">
+      <input type="text" name="temat" class="oq_input_name" placeholder="wyszukiwanie na stronie... " maxlength="900" style="background-color: #130239;">
     </div>
      <a href="błąd.html">  <button style="background-color: #1B0648; color: Grey; width: 180px; height: 30px; border: none;">
       Kto wygrał turniej szachowy?
@@ -36,7 +36,21 @@
 
     </style>
     </center>
-   
+   <div style="position: relative;">
+    <input type="text" name="temat" class="oq_input_name" placeholder="wyszukiwanie na stronie..." maxlength="900" style="background-color: #130239;" onkeypress="checkEnter(event)">
+</div>
+
+<script>
+    function checkEnter(event) {
+        if (event.key === "Enter") {
+            // Получите значение, введенное пользователем
+            var inputValue = document.getElementsByName("temat")[0].value;
+
+            // Выполните переход на другую страницу (bład.html) с учетом введенных данных
+            window.location.href = "bład.html?q=" + encodeURIComponent(inputValue);
+        }
+    }
+</script>
   
 <div style="position: relative;">
         <select style="position: absolute; top: 140; width: 200px; height: 33px; left: 190; ;background-color:#1B0648;font-size:21px;color:#6220B4;">
