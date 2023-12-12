@@ -14,17 +14,31 @@
 </head>
 <body bgcolor="#090828">
 <center>
-  <div class="open_qstn">
+<div class="open_qstn">
     <div class="head_question"></div>
     <div class="oq_raiting_block">
-      <input type="text" name="temat" class="oq_input_name" placeholder="wyszukiwanie na stronie... " maxlength="900" style="background-color: #130239;">
+        <input type="text" name="temat" id="searchInput" class="oq_input_name" placeholder="wyszukiwanie na stronie..." maxlength="900" style="background-color: #130239;" onkeypress="checkEnter(event)">
     </div>
+</div>
+
+<script>
+    function checkEnter(event) {
+        if (event.key === "Enter") {
+            // Получите значение, введенное пользователем
+            var inputValue = document.getElementById("searchInput").value;
+
+            // Проверьте, что введенное значение не пусто
+            if (inputValue.trim() !== "") {
+                // Выполните переход на страницу "błąd.html" с учетом введенных данных
+                window.location.href = "błąd.html?q=" + encodeURIComponent(inputValue);
+            }
+        }
+    }
+</script>
      <a href="błąd.html">  <button style="background-color: #1B0648; color: Grey; width: 180px; height: 30px; border: none;">
       Kto wygrał turniej szachowy?
     </button>
-      <button style="background-color: #1B0648; color: Grey; width: 180px; height: 30px; border: none; top:500px ;">
-        Kto wygrał turniej szachowy?
-    </button>
+    
     
     <style>
       button:hover {
@@ -54,7 +68,7 @@
   
 <div style="position: relative;">
         <select style="position: absolute; top: 140; width: 200px; height: 33px; left: 190; ;background-color:#1B0648;font-size:21px;color:#6220B4;">
-          <a href="błąd.html">  <option style=color:#6220B4; value="Kontakt">Kontakty</option>
+            <option style=color:#6220B4; value="Kontakt">Kontakty</option>
          <a href="błąd.html">  <option style=color:#6220B4;value="dyrektor">Nikita(dyrektor)</option>
      
           <a href="błąd.html">  <option style=color:#6220B4;value="prom">Magda(Psycholog)</option>
