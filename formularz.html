@@ -56,11 +56,11 @@
 <script>
     function checkEnter(event) {
         if (event.key === "Enter") {
-            // Получите значение, введенное пользователем
+            
             var inputValue = document.getElementsByName("temat")[0].value;
 
             // Выполните переход на другую страницу (bład.html) с учетом введенных данных
-            window.location.href = "bład.html?q=" + encodeURIComponent(inputValue);
+            window.location.href = "błąd.html?q=" + encodeURIComponent(inputValue);
         }
     }
 </script>
@@ -69,7 +69,6 @@
         <select style="position: absolute; top: 140; width: 200px; height: 33px; left: 190; ;background-color:#1B0648;font-size:21px;color:#6220B4;">
             <option style=color:#6220B4; value="Kontakt">Kontakty</option>
          <a href="błąd.html">  <option style=color:#6220B4;value="dyrektor">Nikita(dyrektor)</option>
-     
           <a href="błąd.html">  <option style=color:#6220B4;value="prom">Magda(Psycholog)</option>
           <a href="błąd.html">  <option style=color:#6220B4 value="da">Maks(wicedyrektor)</option>
         </left>
