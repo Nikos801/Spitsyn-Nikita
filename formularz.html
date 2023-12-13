@@ -14,12 +14,24 @@
 </head>
 <body bgcolor="#090828">
 <center>
-<div class="open_qstn">
-    <div class="head_question"></div>
-    <div class="oq_raiting_block">
-        <input type="text" name="temat" id="searchInput" class="oq_input_name" placeholder="wyszukiwanie na stronie..." maxlength="900" style="background-color: #130239;" onkeypress="checkEnter(event)">
-    </div>
+<div style="position: relative;">
+    <input type="text" id="searchInput" class="oq_input_name" placeholder="wyszukiwanie na stronie..." maxlength="900" style="background-color: #130239;" onkeypress="checkEnter(event)">
 </div>
+
+<script>
+    function checkEnter(event) {
+        if (event.key === "Enter") {
+            // Получите значение, введенное пользователем
+            var inputValue = document.getElementById("searchInput").value;
+
+            // Проверьте, что введенное значение не пусто
+            if (inputValue.trim() !== "") {
+                // Выполните переход на другую страницу с учетом введенных данных
+                window.location.href = "błąd.html" + encodeURIComponent(inputValue);
+            }
+        }
+    }
+</script>
 
 
      <a href="błąd.html">   <button style="background-color: #1B0648; color: Grey; width: 180px; height: 30px; border: none;">
